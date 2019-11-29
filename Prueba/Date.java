@@ -40,14 +40,14 @@ public class Date {
 		if (anio > 0)
 			this.anio = anio;
 		else
-			this.anio = 2018;
+			this.anio = 2019;
 	}
 
 	public void defAnioBiciesto() {
 		this.biciesto = true;
 		if (anio % 4 != 0) {
 			this.biciesto = false;
-			//System.out.println("El Anio No Es Biciesto");
+			//System.out.println("El ano no es biciesto");
 		}
 
 	}
@@ -66,12 +66,12 @@ public class Date {
 			if(this.biciesto==true  && this.mes ==2  ) {
 				if(this.dia>29 ) {
 					this.mes+=1;
-					this.dia=this.dia-29;// para evitar complejidades se realiza esta asignacion
+					this.dia=this.dia-29;// se realiza esta asignacion
 				}	
 			}else {
 				if(this.dia>28 && this.mes == 2 ) {
 					this.mes+=1;
-					this.dia=this.dia-28;// para evitar complejidades se realiza esta asignacion
+					this.dia=this.dia-28;// se realiza esta asignacion
 				}
 			}
 		}
